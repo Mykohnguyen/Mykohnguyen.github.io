@@ -1,0 +1,36 @@
+#header{
+    width:100%;
+    height:10%;
+    border-bottom:2px solid black;
+    text-align: center;
+}
+.left{
+    width:30%;
+    height:100%;
+    border-left:2px solid black;
+    display:inline-block;
+}
+.pictureframe{
+    width:30%;
+    height:100%;
+    border-left:2px solid black;
+    display:inline-block;
+
+}
+.right{
+    width:40%;
+    height:100%;
+    display:inline-block;
+    
+}
+
+#main{
+    width:100%;
+    height:70%;
+    border-bottom:2px solid black;
+}
+#projects{
+    width:100%;
+    height:40%;
+    border-bottom:2px solid black;
+}
