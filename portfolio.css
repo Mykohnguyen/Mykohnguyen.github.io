@@ -1,0 +1,134 @@
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    /* border-right: 2px solid rgba(255,255,255,.75); */
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+
+.header{
+    border-bottom:2px solid black;
+    background-image:url('portfolio2.jpg');
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    height:700px;
+    opacity:.8;
+    color:white;
+}
+.right{
+    text-align:right;
+}
+.main{
+    height:1000px;
+}
+.about{
+    border-bottom: 2px solid black;
+    height:333px;
+    background-image:url("bubbles.png");
+    opacity:.5;
+}
+.experience{
+    height:333px;
+    border-bottom: 2px solid black;
+    background-image:url("bubbles.png");
+    opacity:.5;
+}
+.contact{
+    height:333px;
+    background-image:url("bubbles.png");
+    opacity: .5;
+}
+.left-section{
+    border-right:2px dotted black;
+}
+.right-section{
+    border-left:2px dotted black;
+}
+.sidebar{
+    border-right:2px solid black;
+    height:100%;
+    background-color:white;
+}
+.verticaltext{
+    width:1px;
+    word-wrap: break-word;
+    font-family: monospace;
+    font-size:14pt;
+}
+.sidebar p{
+    display:inline-block;
+}
+.technologies_item{
+    border-radius:5px;
+    display:inline-block;
+    background-color:#b24545;
+    border:2px solid #707070;
+    opacity:1;
+}
+.middle-section{
+    text-align:center;
+}
+.picture2,.picture1,.picture3{
+    width:100%;
+    height:100%;
+}
+h1{
+    font: 1.5em arial;
+}
+.middle-section p{
+    display:inline-block;
+}
+
+.colors{
+    color:#94ca79;
+    color:#919191;
+    color:#e3fcd7;
+    color:#707070;
+
+
+    color:#5d0000;
+    color:#b24545;
+}
+.icon{
+    width:25%;
+    height:35px;
+}
+.project_header{
+    background:#5d0000;
+    opacity:.6;
+}
+.project2_info{
+    display:none;
+}
+.overflow{
+   overflow-x:hidden;
+   width:100%;
+   height:100%;
+   margin:0px auto;
+   padding: 0px;
+}
+.contact_info{
+    background:#5d0000;
+    border:2px solid #707070;
+    color:white;
+}
+*{
+    margin:0;
+    padding:0;
+}
