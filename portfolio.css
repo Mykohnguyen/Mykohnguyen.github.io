@@ -26,48 +26,48 @@
     border-bottom:2px solid black;
     background-image:url('me.jpg');
     background-repeat:no-repeat;
-    background-size:100% 100%;
+    background-size:stretch;
     height:700px;
     color:white;
+}
+@media all and (max-width:1050px){
+    .header{
+        height:600px;
+    }
+    .main{
+        height:769px;
+    }
 }
 .right{
     text-align:right;
 }
-.main{
-    height:1000px;
-}
-.about{
-    border-bottom: 2px solid black;
-    height:333px;
-    background-image:url("bubbles.png");
-    opacity:.5;
-}
+
 .experience{
-    height:333px;
+    height:33.3%;
     border-bottom: 2px solid black;
-    background-image:url("bubbles.png");
-    opacity:.5;
+    border-top:2px dashed white;
 }
-.contact{
-    height:333px;
-    background-image:url("bubbles.png");
-    opacity: .5;
-}
-.left-section{
-    border-right:2px dotted black;
-}
-.right-section{
-    border-left:2px dotted black;
+.experience_background{
+    background-image: url(pattern.png);
+    background-size: 100% 100%;
+    opacity: .6;
+    position: absolute;
+    left: 10%;
+    top: 0;
+    height: 100%;
+    width: 90%
 }
 .sidebar{
     height: 100%;
-    background-color: white;
-    border-right: 2px solid black;
+    background-color: #222639;
+    border-left: 2px dashed white;
+    border-right: 2px dashed white;
     display: inline-block;
     left: 0;
     position: absolute;
     padding-left: 3%;
-    padding-right: 5%;
+    color:white;
+    padding-right: 6%;
 
 }
 .verticaltext{
@@ -75,16 +75,18 @@
     word-wrap: break-word;
     font-family: monospace;
     font-size:14pt;
+    font-weight:1000;
 }
 .sidebar p{
     display:inline-block;
 }
 .technologies_item{
-    background:#5d0000;
+    background:#222639;
     border:2px solid #707070;
     color:white;
     display: inline-block;
     padding:2%;
+    font-size:1vw;
 }
 .technologies_item:hover{
     border-color: rgba(255,255,255,1);
@@ -93,13 +95,11 @@
 
 .middle-section{
     text-align:center;
+    background:#222639;
 }
 .picture2,.picture1,.picture3{
     width:100%;
     height:100%;
-}
-h1{
-    font: 1.5em arial;
 }
 .middle-section p{
     display:inline-block;
@@ -125,6 +125,11 @@ h1{
 }
 .project2_info{
     display:none;
+    background:#222639;
+}
+.project_info{
+    background:#222639;
+    color:white;
 }
 .overflow{
    overflow-x:hidden;
@@ -133,11 +138,13 @@ h1{
    margin:0px auto;
    padding: 0px;
 }
-.contact_info{
-    background:#5d0000;
-    border:2px solid #707070;
+.subcontent{
     color:white;
     position: absolute;
+    left:11%;
+}
+.technologies{
+    position:absolute;
     left:9%;
 }
 *{
@@ -149,6 +156,55 @@ h1{
     padding-right:0px;
     margin:0;
 }
+.peanut{
+    display:none;
+}
+
 html,body{
     overflow-x:hidden;
+    height:100%;
+    background-color:#222639;
 }
+.info{
+    height:135px;
+    border-bottom: 2px dashed white;
+    background-image:url("pattern.png");
+    margin-bottom:40px;
+}
+@media all and (max-width:700px){
+    .right-section{
+        display:none;
+    }
+    .header{
+        height:400px;
+    }
+    h2{
+        font-size:20pt;
+    }
+    p{
+        font-size:8pt;
+    }
+    .peanut{
+        display:block;
+    }
+    .main{
+        height:455px;
+    }
+    .verticaltext{
+        font-size:7pt;
+    }
+    .info{
+        height:160px;
+    }
+    .sidebar{
+        padding-right:5%;
+    }
+}
+.fill-height {
+    min-height: 100%;
+    height:auto !important; /* cross-browser */
+    height: 100%; /* cross-browser */
+    background-color:#222639;
+}
+
+
