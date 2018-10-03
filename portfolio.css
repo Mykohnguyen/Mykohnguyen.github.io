@@ -54,7 +54,7 @@ html,body{
 
 .header{
     border-bottom:2px solid black;
-    background-image:url('portrait2.jpg');
+    background-image:url('headerimage.jpg');
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
