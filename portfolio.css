@@ -30,19 +30,23 @@ html,body{
     top: 50%;  
     width: 24em;
     margin: 0 auto;
-    /* border-right: 2px solid rgba(255,255,255,.75); */
     font-size: 180%;
-    text-align: center;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);    
+    font-size:3.0vw;
 }
+
 
 /* Animation */
 .anim-typewriter{
   animation: typewriter 4s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
 }
+.anim-typewriter2{
+    animation: typewriter 4s steps(44) 5s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
 @keyframes typewriter{
   from{width: 0;}
   to{width: 24em;}
@@ -50,10 +54,11 @@ html,body{
 
 .header{
     border-bottom:2px solid black;
-    background-image:url('me.jpg');
-    background-repeat:no-repeat;
-    background-size:stretch;
-    height:700px;
+    background-image:url('portrait2.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color:white;
 }
 .right{
@@ -87,9 +92,15 @@ html,body{
 .middle-section p{
     display:inline-block;
 }
-
+.main{
+    height:100vh;
+}
 .peanut{
     display:none;
+}
+.main_left{
+    position: absolute;
+    left:0;
 }
 
 /*********************************************
@@ -106,7 +117,9 @@ html,body{
 }
 .contact_info{
     font-size:14pt;
-    margin-top:25px;
+    margin-top:14px;
+    margin-left:25px;
+    color:white;
 }
 .info{
     height:135px;
@@ -116,7 +129,7 @@ html,body{
 }
 .technologies{
     position:absolute;
-    left:9%;
+    left:12%;
 }
 .icon{
     width:25%;
@@ -128,7 +141,8 @@ html,body{
     color:white;
     display: inline-block;
     padding:2%;
-    font-size:1vw;
+    font-size:3.5vw;
+    margin-top:4%;
 }
 .sidebar p{
     display:inline-block;
@@ -173,26 +187,15 @@ html,body{
     position:absolute;
     top:25%;
 }
-@media all and (max-width:1050px){
-    .header{
-        height:600px;
-    }
-    .main{
-        height:769px;
-    }
-}
 @media all and (max-width:700px){
     .right-section{
         display:none;
-    }
-    .header{
-        height:400px;
     }
     h2{
         font-size:20pt;
     }
     p{
-        font-size:8pt;
+        font-size:9pt;
     }
     .peanut{
         display:block;
@@ -202,12 +205,16 @@ html,body{
     }
     .verticaltext{
         font-size:7pt;
+        margin-top:0px;
     }
     .info{
         height:160px;
     }
     .sidebar{
         padding-right:5%;
+    }
+    .center{
+        margin-top:30px;
     }
 }
 .fill-height {
