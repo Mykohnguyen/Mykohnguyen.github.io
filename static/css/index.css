@@ -70,6 +70,7 @@ body {
 }
 .main {
   height: 100vh;
+  color:white;
 }
 .peanut {
   display: none;
