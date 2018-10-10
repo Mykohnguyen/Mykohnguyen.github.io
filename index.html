@@ -4,76 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="portfolio.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/index.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <title>Document</title>
 </head>
-<body> 
-    <!-- Header/Selfie -->
 
+<body>
+        <!-- ===============================================
+                            HEADER
+    =============================================================== -->
     <div class="container-fluid fill-height space">
-            <div class="jumbotron jumbotron-fluid header space">
-                <div class="container">
-                    <div class="main_left">
-                        <h1 class="line-1 anim-typewriter"> Hi name is Michael </h1>
-                        <h1 class="line-1 anim-typewriter2">and I am a full stack developer</h1>
-                    </div>
-                </div>
-                </div>
+        <div class="jumbotron jumbotron-fluid header space">
+            <div class="header_left">
+                <h1> Hi my name is
+                    <span class="blue">Michael Nguyen</span>
+                    <br> and I'm a
+                    <span class="blue">Full Stack Developer</span>
+                </h1>
             </div>
-        
-    
-    <!-- MAIN CONTENT -->
-
+        </div>
+       <!-- ===============================================
+                            MAIN CONTENT 
+    =============================================================== -->
         <div class="row main space">
-            <div class="col col-lg-9 col-md-9 col-sm-12 middle-section" style="padding:0">
+            <div class="col col-lg-9 col-md-12 col-sm-12 middle-section" style="padding:0">
                 <div id="demo" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
                     <ul class="carousel-indicators">
                         <li data-target="#demo" data-slide-to="0" class="active"></li>
                         <li data-target="#demo" data-slide-to="1"></li>
                         <li data-target="#demo" data-slide-to="2"></li>
                     </ul>
-                    
-                    <!-- The slideshow -->
+
+        <!-- ===============================================
+                           SLIDESHOW
+    =============================================================== -->
                     <div class="carousel-inner slides">
                         <div class="carousel-item active">
-                            <img class="picture1"src="momentum_home.png">
+                            <img class="picture1" src="static/images/momentum_home.png">
                         </div>
                         <div class="carousel-item">
-                            <img class='picture2' src="momentum_exercises.png">
+                            <img class='picture2' src="static/images/momentum_exercises.png">
                         </div>
                         <div class="carousel-item">
-                            <img class='picture3' src="momentum_stats.png">
+                            <img class='picture3' src="static/images/momentum_stats.png">
                         </div>
                     </div>
-
-                    <!-- Left and right controls -->
                     <a class="carousel-control-prev" href="#demo" data-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </a>
                     <a class="carousel-control-next" href="#demo" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
-
                 </div>
-                <p class="switch">Project 1</p> | <p class="switch2">Project 2</p> <br>
-                
+    <!-- ========================================================
+                                SLIDESHOW INFO
+    =============================================================== -->
+                <p class="switch">Project 1</p> |
+                <p class="switch2">Project 2</p>
+                <br>
                 <div class="project_info">
-                    <p class="project_url">www.momentum-tracker.com | <a href="https://www.github.com/mykohnguyen/workout">Github</a></p>
-                    <h2 class="project_title">Momentum Tracker</h2> <br>
-                    <p class="project_desc">Momentum Tracker is a personal web application that allows me to choose exercies based on muscle and create a workout for me to track and update. Each exercise has data from each workout and graphs the calculated one-rep max which allows me to visually see my progress.</p>
+                    <p class="project_url">
+                        <a href="www.momentum-tracker.com">www.momentum-tracker.com</a>|
+                        <a href="https://www.github.com/mykohnguyen/workout">Github</a>
+                    </p>
+                    <h2 class="project_title">Momentum Tracker</h2>
+                    <br>
+                    <p class="project_desc">Momentum Tracker is a personal web application that allows me to choose exercies based on muscle and
+                        create a workout for me to track and update. Each exercise has data from each workout and graphs
+                        the calculated one-rep max which allows me to visually see my progress.</p>
                 </div>
                 <div class="project2_info">
-                    <p class="project2_url">www.codingme.com | <a href="https://www.github.com/mykohnguyen/codingme">Github</a></p>
+                    <p class="project2_url">
+                        <a href="www.codingme.com">www.codingMe.com</a> |
+                        <a href="https://www.github.com/mykohnguyen/codingme">Github</a>
+                    </p>
                     <h2 class="project2_title">CodingMe!</h2>
-                    <p class="project_desc2">CodingMe! is a web application that helps users learn and practice their coding knowledge, earn points and decorate their avatar! Also get competive to climb the rankings.</p>
+                    <p class="project_desc2">CodingMe! is a web application that helps users learn and practice their coding knowledge, earn points
+                        and decorate their avatar! Also get competive to climb the rankings.</p>
                 </div>
             </div>
-
+       <!-- ===============================================
+                            RIGHT SECTION
+    =============================================================== -->
             <div class="col-3 right-section space">
+<!-- ===============================================
+                            ABOUT
+    =============================================================== -->
                 <div class="row experience space">
                     <div class="col-12">
                         <div class="sidebar">
@@ -81,11 +101,19 @@
                         </div>
                         <div class="experience_background"></div>
                         <div class="subcontent">
-                            <p> I was lost for awhile following dreams and passions of parents and friends. Hobbies became the most interesting part of my days, rock climbing and day-trading. The countless exerimenting, problem solving,and creative thinking to come up with a solution or many other solutions was extremely enjoyable for me. I stumbled upon programming after reviewing what I did as a kid, and found it! Programming included all the characterstics of my hobbies and allowed me to feel like I'm in a sandbox. Being able to build anything with different ways of doing it, it lit a fire inside me and I finally can say I have found the passion, my passion.</p>
+                            <p>
+                                I have a passion for problem-solving and experimenting.I am always looking forward to learning and expanding my knowledge.
+                                I love to take the norm and twist it or come up with a different approach either to optimize
+                                or test the capabilities. These opppurtunities are all in my interests : coding, technical
+                                analysis of stock market, and rock-climbing. It is a thrill to be in an sandbox environment that
+                                is face-paced and at times unpredictable.
+                            </p>
                         </div>
                     </div>
                 </div>
-
+       <!-- ===============================================
+                            TECHNOLOGIES
+    =============================================================== -->
                 <div class="row experience space">
                     <div class="col-12">
                         <div class="sidebar">
@@ -107,7 +135,9 @@
                         </div>
                     </div>
                 </div>
-    
+       <!-- ===============================================
+                            CONTACT INFO
+    =============================================================== -->
                 <div class="row experience space">
                     <div class="col-12">
                         <div class="sidebar">
@@ -115,27 +145,45 @@
                         </div>
                         <div class="experience_background"></div>
                         <div class="subcontent">
-                            <span class="fas fa-envelope contact">Mykohnguyen@gmail.com</span><br>
-                            <span class="fas fa-phone-square contact ">(702)540-0360</span><br>
-                            <span class="fab fa-linkedin">www.linkedin.com/in/michael-nguyen-a10483166</span><br>
-                            <span class="fab fa-github">www.github.com/Mykohnguyen</span>
+                            <span class="fas fa-envelope contact">Mykohnguyen@gmail.com</span>
+                            <br>
+                            <span class="fas fa-phone-square contact ">(702)540-0360</span>
+                            <br>
+                            <span class="fab fa-linkedin">
+                                <a href="www.linkedin.com/in/michael-nguyen-a10483166">www.linkedin.com/in/michael-nguyen-a10483166</a>
+                            </span>
+                            <br>
+                            <span class="fab fa-github">
+                                <a href="www.github.com/Mykohnguyen">www.github.com/Mykohnguyen</a>
+                            </span </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+       <!-- ===============================================
+                           HIDDEN SECTION BELOW MAIN CONTENT
+    =============================================================== -->
             <div class="peanut">
+       <!-- ===============================================
+                            ABOUT
+    =============================================================== -->                
                 <div class="row w-100 info space">
                     <div class="col-12">
                         <div class="sidebar">
                             <p class="verticaltext center">ABOUT</p>
                         </div>
-                        <div class="contact_info">
-                            <p>I been following the path of expectations rather than passion for a long time. With coding making its presence I finally found a passion. I love puzzles, experimenting, and the unbinding of possibilities. That is the case for my hobbies and work. Climbing/Bouldering, Day-Trading through technical analysis, and coding. It allows me to just keep thinking of whats next based on knowledge.</p>
+                        <div class="subcontents">
+                            <p>I have a passion for problem-solving and experimenting.I am always looking forward to learning and expanding my knowledge.
+                                I love to take the norm and twist it or come up with a different approach either to optimize
+                                or test the capabilities. These opppurtunities are all in my interests : rock climbing, technical
+                                analysis of stock market, and coding. It is a thrill to be in an sandbox environment that
+                                is face-paced and at times unpredictable.</p>
                         </div>
                     </div>
                 </div>
-
+       <!-- ===============================================
+                            TECHNOLOGIES
+    =============================================================== -->
                 <div class="row w-100 info space">
                     <div class="col-12 testing1">
                         <div class="sidebar testing">
@@ -156,26 +204,39 @@
                         </div>
                     </div>
                 </div>
-
+       <!-- ===============================================
+                            CONTACT INFO 
+    =============================================================== -->
                 <div class="row w-100 info space">
                     <div class="col-12">
                         <div class="sidebar">
                             <p class="verticaltext center">CONTACT</p>
                         </div>
-                        <div class="contact_info">
-                            <span class="fas fa-envelope">Mykohnguyen@gmail.com</span><br>
-                            <span class="fas fa-phone-square">(702)540-0360</span><br>
-                            <span class="fab fa-linkedin">www.linkedin.com/in/michael-nguyen-a10483166</span><br>
-                            <span class="fab fa-github">www.github.com/Mykohnguyen</span>
+                        <div class="subcontents">
+                            <span class="fas fa-envelope contact">Mykohnguyen@gmail.com</span>
+                            <br>
+                            <span class="fas fa-phone-square contact">(702)540-0360</span>
+                            <br>
+                            <span class="fab fa-linkedin contact">
+                                <a href="www.linkedin.com/in/michael-nguyen-a10483166">www.linkedin.com/in/michael-nguyen-a10483166</a>
+                            </span>
+                            <br>
+                            <span class="fab fa-github contact">
+                                <a href="www.github.com/Mykohnguyen">www.github.com/Mykohnguyen</a>
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script type="text/javascript" src="index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="static/script/index.js"></script>
 </body>
+
 </html>

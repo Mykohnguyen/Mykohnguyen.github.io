@@ -28,7 +28,7 @@ body {
  ***********************************************/
 .header {
   border-bottom: 2px solid black;
-  background-image: url("/static/images/headerimage.jpg");
+  background-image: url("../images/headerimage.jpg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -100,7 +100,7 @@ body {
 .info {
   height: 135px;
   border-bottom: 2px dashed white;
-  background-image: url("static/images/pattern.png");
+  background-image: url("../images/pattern.png");
   margin-bottom: 40px;
 }
 .technologies {
@@ -129,7 +129,7 @@ body {
   border-top: 2px dashed white;
 }
 .experience_background {
-  background-image: url("static/images/pattern.png");
+  background-image: url("../images/pattern.png");
   background-size: 100% 100%;
   opacity: 0.6;
   position: absolute;
